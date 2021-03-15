@@ -1,0 +1,304 @@
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: Open Sans, sans-serif;
+
+
+}
+
+.mylogo{
+    padding: 0 1rem;
+    margin-left: 1rem;
+    width: 140px;
+    height: auto;
+}
+  
+.header_area .main-menu .navbar .navbar-brand{
+      padding:0 2rem 0 0rem;
+  }
+  
+  .header_area .main-menu .navbar{
+      padding: 1rem 12rem;
+      background-color: #fdfdfd;
+      box-shadow: 5px;
+      
+  }
+  
+  .header_area .main-menu .nav-item .nav-link{
+      font: normal 500 15px/2px Open Sans;   
+         
+      padding: 1.7rem;
+      color: #141313;
+  
+  }
+  
+  
+  .header_area .main-menu .navbar-nav .active a{
+      background: #7e7e7e;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+  
+}
+  
+  
+  .header_area .main-menu .navbar-nav a:hover{
+      background: #7e7e7e;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+  
+  
+  }
+
+
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+.scrolled-down{
+     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+.scrolled-up{
+     transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+
+
+
+.course-hero-unenrolled {
+    background: #fff;
+    border-bottom: 1px solid #e8eaed;
+    padding: 80px 0;
+}
+
+
+
+.course-hero-unenrolled__columns {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.course-hero-unenrolled__title{
+
+    
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: .5px;
+    color: #5f6368;
+    margin-bottom: 8px;
+    margin-top: 28px;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-hero-unenrolled__subtitle {
+    text-rendering: optimizeLegibility;
+    
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    color: #9aa0a6;
+    margin-bottom: 16px;
+}
+
+
+
+
+.gimg{
+
+    padding: 20px 0px;
+    display: block;
+    
+    margin-right: auto;
+    
+
+}
+.titlep1{
+
+    margin: auto;
+
+}
+
+h2:empty{
+    display:none;
+}
+
+.empty:empty{
+
+display:none;
+}
+
+.question_heading{
+    padding: 30px 0px;
+    color: #3c4043;
+
+}
+
+
+
+ /* Questions CSS */
+
+
+.wrapper {
+    
+    margin: 20px auto;
+}
+
+.content {
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+span1 {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(50, 141, 245);
+    padding-bottom: 30px;
+}
+
+p.text-muted2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.text-muted2{
+color:blue;
+
+
+}
+
+.qno{
+    font-weight:500;
+    }
+
+.option {
+    display: block;
+    height: 50px;
+    background-color: #fafafa;
+    position: relative;
+    width: 100%;
+}
+
+.option:hover {
+    background-color: #e8e8e8;
+    cursor: pointer;
+}
+
+.option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.one-1,
+.two-2,
+.three-3,
+.four-4,
+.x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 22px;
+    width: 22px;
+    background-color: transparent;
+    border-radius: 2px;
+    padding: 0;
+}
+
+.option:hover input~.one-1,
+.option:hover input~.two-2,
+.option:hover input~.three-3,
+.option:hover input~.four-4,
+.option:hover input~.x {
+    background-color: #e8e8e8;
+}
+
+.option input:checked~.one-1,
+.option input:checked~.two-2,
+.option input:checked~.three-3,
+.option input:checked~.four-4 ,
+{
+    background-color: #79d70f;
+    font-weight: bold;
+
+}
+
+.option input:checked~.x {
+    background-color: #ec3838;
+}
+
+.one-1:after,
+.two-2:after,
+.three-3:after,
+.four-4:after,
+.x:after {
+    content: "\2714";
+    position: absolute;
+    background-color: #79d70f;
+    display: none;
+    color: #fff;
+    padding-left: 4px;
+    width: 22px;
+    font-size: 16px;
+
+}
+
+.x:after {
+    content: "\2715";
+    background-color: #ec3838;
+}
+
+.option input:checked~.one-1:after,
+.option input:checked~.two-2:after,
+.option input:checked~.three-3:after,
+.option input:checked~.four-4:after,
+.option input:checked~.x:after {
+    display: block;
+    transition: 100ms ease-out 1s;
+}
+
+.abd{
+color:#5c4dda;
+
+}
+
+
+
+
+/* Footer */
+
+
+
+
+
+ .mylogo-2{
+    width: 13rem;
+
+    padding: 3rem 0rem;
+
+ }
+
+ 
