@@ -239,7 +239,7 @@ color:blue;
 .option input:checked~.one-1,
 .option input:checked~.two-2,
 .option input:checked~.three-3,
-.option input:checked~.four-4 ,
+.option input:checked~.four-4 
 {
     background-color: #79d70f;
     font-weight: bold;
